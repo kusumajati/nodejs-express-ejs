@@ -1,0 +1,14 @@
+<%- include('partials/header'); %>
+    <ul>
+       <% users.map(user=>{ %>
+       <a href='/user/<%= user.id %>'>
+            <li>
+                <img src= <%= user.image %> alt="">
+                <span> <%= user.name%></span>    
+            </li>
+        </a>
+
+
+       <% }) %> 
+    </ul>
+    <%- include('partials/footer'); %>

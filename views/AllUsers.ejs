@@ -1,6 +1,10 @@
 <%- include('partials/header'); %>
     <ul>
-       <% users.map(user=>{ %>
+        <form action="/get-form/user" method="GET">
+            <input type="submit" value="Add a new user">
+        </form>
+        <br>
+        <% users.map(user=>{ %>
        <a href='/user/<%= user.id %>'>
             <li>
                 <img src= <%= user.image %> alt="">

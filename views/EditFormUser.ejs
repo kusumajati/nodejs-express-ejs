@@ -1,0 +1,11 @@
+<%- include("partials/header") %>
+
+<form id="realForm" action="/user/<%= user.id%>?_method=PUT" method="POST" enctype="multipart/form-data">
+    <input type="text" name="name" placeholder="Name" value="<%= user.name%>" >
+    <input type="text" name="nohp" placeholder="hp" value="<%= user.nohp%>" >
+    <input type="text" name="email" placeholder="email"  value="<%= user.email%>" >
+    <input type="file" name="profile-picture"  >
+    <img src="<%= user.image%>" alt="">
+    <input type="submit" value="Update User">
+</form>
+<%- include("partials/footer") %>

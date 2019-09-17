@@ -1,0 +1,14 @@
+<%- include('partials/header') %>
+
+<div style="text-align: center; margin : 2em;" class="jumbotron">
+    <i  class="far fa-check-circle fa-10x"></i>
+    <h1 class="display-4"><%= status%></h1>
+    <p class="lead"><%= message %></p>
+    <hr class="my-4">
+    <p>Click Buttons Bellow for Links</p>
+    <a class="btn btn-primary btn-lg" href="/" role="button">Bact to Home</a>
+    <a class="btn btn-primary btn-lg" href="/user/<%= id%>" role="button">View User</a>
+ 
+</div>
+
+  <%- include('partials/footer')%>
